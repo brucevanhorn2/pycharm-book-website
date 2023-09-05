@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Bruce M. Van Horn II, CSM" />
+    <meta keywords="PyCharm, Python, JetBrains, programming, software development" />
+    <meta name="description" content="Author: Bruce M. Van Horn II, Illustrator: Bruce M. Van Horn II, Category: Books, Length 504 pages, Price 41.99 USD" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/typing-effect.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <title>Hands On Application Development with PyCharm 2nd Edition</title>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu" style="background-color: #1C3C4D">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html"> Home </a>
+          <a class="navbar-item" target="_blank" href="https://amzn.to/3ThiHPn">Buy the Book</a>
+          <!-- <a class="navbar-item" href="gallery.html"> Art Gallery </a> -->
+          <a class="navbar-item" href="author-bio.html"> About the Authors </a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                id="btnNotify"
+                class="button standard-green"
+                href="sign-up.html"
+              >
+                <strong>Register Your Book!</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section container">
+      <div class="columns is-mobile is-centered dynamic-type">
+        <h1 class="title" style="text-align: center">
+          <span class="sentence topSpacing">Finally, a book on PyCharm that won't</span
+          ><br />
+          <span id="sentence" class="sentence"></span>
+          <span id="feature-text"></span>
+          <span class="input-cursor">|</span>
+        </h1>
+      </div>
+    </section>
+    <div style="text-align:center" class="is-hidden-tablet">
+      <i class="fa-duotone fa-chevrons-down"></i>    
+    </div>
+    <section class="section container is-mobile">
+      <div class="columns is-centered">
+        <div class="column is-one-third">
+          <figure class="image is-4by5">
+            <a href="https://amzn.to/3ThiHPn" target="_blank">
+              <img
+                alt="A picture of the cover of the book.  It's all shiny and black with an abstract purple box thingy.  Whatever, it's cool so go get the book already!"
+                src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/actual-cover.webp"
+              />
+            </a>
+          </figure>
+        </div>
+        <div class="column" style="margin: 20px">
+          <h1 class="is-hidden-mobile title is-1" style="margin-bottom: 60px">
+            Hands On Application Development with PyCharm
+          </h1>
+          <h1 class="is-hidden-tablet title is-3" style="margin-bottom: 60px">
+            Hands On Application Development with PyCharm
+          </h1>
+          <h2 class="subtitle is-3" style="margin-bottom: 80px">
+            <em>I'm sure there will be a fancy subtitle soon!</em
+            >
+          </h2>
+          <h3 class="title is-4">by
+            <a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank">Bruce M. Van Horn II</a> and
+            <a href="https://www.linkedin.com/in/quan-m-nguyen/" target="_blank">Quan Nguyen</a></h3>
+          <h5 class="title is-5">
+            <a
+              href="https://github.com/PacktPublishing/Hands-On-Application-Development-with-PyCharm---Second-Edition"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+              ><span style="margin-right: 16px">
+                Fork the code on GitHub</span
+              ></a
+            >
+          </h5>
+        </div>
+      </div>
+    </section>
+    <section
+      id="intro-section"
+      class="section"
+      style="background-color: #073307"
+    >
+      <div class="columns is-centered">
+        <!-- <div class="container"> -->
+        <div class="column is-one-quarter">
+          <img
+            class="is-hidden-mobile lazyload"
+            alt="Phoebe, one of the characters in the book, standing in her lab coat saying AHA!"
+            src="img/not-optimized/just-snake-and-laptop.png"
+          />
+          <div class="is-hidden-tablet" style="text-align: center;">
+            <img
+              class="lazyload"
+              style="height:320px;"
+              alt="Master Py, the Sage of Python widsom"
+              src="img/not-optimized/just-snake-and-laptop.png"
+            />
+          </div>
+        </div>
+        <div class="column is-three-quarters" style="color: white">
+          <p class="title is-3" style="color: limegreen">
+            Wield the PyCharm IDE the way Bruce Lee swings nunchucks!
+          </p>
+          <br />
+          <p class="block">
+           High in the sacred Syntax Mountains, up 32,768 stairs lies the Monastery of Code Harmony.
+          </p>
+          <p class="block">
+            For many years, students gathered in the courtyard for their daily coding exercises under the watchful gaze of the Python Sage, Master Py. One afternoon, as the sun cast a warm glow over the bamboo mats, Master Py raised his tail, and the students fell into a respectful silence.
+          </p>
+          <p class="block">
+            "Today," he began, his voice carrying the weight of wisdom, "we shall delve into the realm of debugging, a skill as crucial to a programmer as a warrior's keen senses are on the battlefield."
+          </p>
+          <p class="block">
+            The students listened intently, their minds ready to absorb the sage's teachings. Master Py continued, "To aid us in this endeavor, we shall invoke the aid of a powerful weapon known as PyCharm; a vessel through which we shall channel our intentions into the digital realm."
+          </p>
+          <p class="block">
+            With a flick of his tongue, and a flourish of his tail, Master Py produced a laptop, adorned with a glowing emblem of a snake entwined with lines of code. On the screen, the students could see the PyCharm IDE, a tool that allowed the students to write, test, and debug their Python code with greater efficiency.
+          </p>
+          <p class="block">
+            "Open your minds to the spirit of PyCharm," Master Py instructed, his eyes twinkling with a hint of playfulness. "Just as a warrior and their weapon become one in battle, so too shall you and PyCharm become one in the art of coding."
+          </p>
+          <p class="block">
+            I was there that day.  I remember powering on my laptop, the screen illuminating with the promise of newfound knowledge. With the guidance of Master Py, I navigated the PyCharm IDE, learning to set breakpoints, inspect variables, and trace the flow of their code's execution.  I learned to channel the energy of PyCharm to create many types of Python projects almost instantly, and to shape those projects into ship-able software.  PyCharm became an extension of my mind as I was challenged with web development and data science workflows.  As the sun rose the next day, I found myself exhausted laying on the temple floor, my laptop battery drained.
+          </p>
+          <p class="block">
+            "Remember," Master Py advised, "the spirit of PyCharm is a loyal companion on your coding journey. It aids you in unraveling the mysteries of your code, just as a masterful warrior anticipates their opponent's moves."
+          </p>
+          <p class="block">
+            The next day, I found myself transported back to the mundane realm that occupies most of my days, but I knew that I had to write down all that I had learned lest Master Py's wisdom leave me forever.  This book is the Master's legacy.
+          </p>
+
+        </div>
+      </div>
+    </section>
+    <section
+      id="professor-section"
+      class="section"
+      style="background-color: #ffffff"
+    >
+      <div class="columns is-mobile is-centered content">
+        <div class="column">
+          <img
+            class="is-hidden-mobile lazyload"
+            alt="This is a picture of an old fuddy-duddy CS prof standing with an ancient computer.  If you are a CS prof don't be a fuddy-duddy, and don't use the classic 1994 book as your textbook.  Try this one instead!  Your students will appreciate it."
+            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/professor-not-appearing-in-this-book-lq.webp"
+            data-src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/professor-not-appearing-in-this-book-4.webp"
+          />
+          <div class="is-hidden-tablet">
+            <img
+              class="lazyload"
+              alt="This is a picture of an old fuddy-duddy CS prof standing with an ancient computer.  If you are a CS prof don't be a fuddy-duddy, and don't use the classic 1994 book as your textbook.  Try this one instead!  Your students will appreciate it."
+              src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/professor-not-appearing-in-this-book-lq.webp"
+              data-src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/professor-not-appearing-in-this-book-4-mobile.webp"
+          />
+            
+          </div>
+          <p class="title is-3" style="color: #000000">
+            Why should you use <u>this</u> book to learn or teach software
+            design patterns in C#?
+          </p>
+          <p class="title is-4">
+            Most books on patterns have one or more problems:
+          </p>
+          <div class="block">
+            <ol>
+              <li>
+                They are written by university professors for other university
+                professors. These people have never had to ship real software on
+                a deadline. Learning from them is like learning to play a
+                musical instrument from someone who has only ever listened to
+                the radio.
+                <strong
+                  >This book is written in plain English by a real (but not
+                  perfect) software developer with over 25 years of experience
+                  shipping very large software projects.</strong
+                >
+              </li>
+              <li>
+                Writing a book on patterns is hard! Many authors play it safe
+                and make every example super-vague, or overly contrived. <em>Class A
+                inherits from Class B which depends on Class C.</em> Unless you're
+                making a weird alphabet app, that kind of treatment isn't going
+                to be very useful. The examples in this book are relatable.
+                <strong
+                  >If you've ever ridden a bicycle before, you'll understand
+                  this book.</strong
+                >
+              </li>
+              <li>
+                The implementation language is old, irrelevant, or pseudocode.
+                <strong
+                  >You need to learn patterns in a language you can actually use. C#
+                  is a popular choice.</strong
+                >
+                The book includes an extensive Appendix to help new developers
+                orient to the content in the book.
+              </li>
+              <li>
+                They aren't written with real world business problems in mind.
+                The seminal work in software design patterns includes examples
+                on UI design in MOTIF, and algorithms for managing lines on
+                printed circuit boards.
+                <strong
+                  >You need a book (like this one) that focuses on the kinds of
+                  business scenarios you're actually going to see in your
+                  work.</strong
+                >
+              </li>
+              <li>
+                They aren't written from a real-world perspective. Does your
+                code break? Do you sometimes run with an idea only to find it
+                doesn't work out? Have you ever noticed that in most books, that
+                never happens?
+                <strong
+                  >In this book, the characters make mistakes, then learn how to
+                  solve them.</strong
+                >
+              </li>
+              <li>
+                They go for quantity over quality. Trying to cover every
+                software pattern ever conceived is a noble endeavor, but it's
+                like trying to document every feature in Excel. Did you know
+                Excel can sum a column of numbers? Of course! Did you know there
+                is an Excel function to convert your numbers into Roman
+                numerals? Some of the patterns outlined in longer books are
+                about as useful. You need a book that focuses on the patterns
+                you'll really use. <strong>That's what this book does!</strong>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="antipatterns-section"
+      class="section"
+      style="background-color: #211d1e"
+    >
+      <div class="columns is-centered">
+        <div class="column is-three-quarters" style="color: white">
+          <p class="title is-3" style="color: #f69423">
+            Learn to defeat antipatterns and dark forces that plague 99% our projects!
+          </p>
+          <p class="title is-4" style="color: #f69423">
+            (Most software developers don't do this!)
+          </p>
+          <br />
+          <p class="block">
+            This book focuses entirely on reality, warts and all. It presents
+            the story of two sisters, Kitty and Phoebe, who create a tech
+            startup aimed at building the finest bicycles the world has ever
+            seen. The girls are not professional software developers, so they
+            have to learn as they go.&nbsp; They have business objectives and
+            very real competitive pressures just like you do.&nbsp; Left to
+            their own devices, their code will turn into a big ball of mud on a
+            plate of spaghetti.&nbsp;&nbsp;
+          </p>
+          <p class="block">
+            We start off with some anti-patterns: those practices everybody does
+            because either they're lazy, or they cut corners because they're under extreme pressure to
+            ship before the code is ready.&nbsp; These conditions can be
+            corrected with regular refactoring and code reviews, but they
+            usually aren't.&nbsp; The anti-patterns we cover include:
+          </p>
+
+          <div
+            class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+          >
+            <div class="column">
+              <article class="message">
+                <div class="message-header">
+                  <p>A Big Ball of Mud</p>
+                </div>
+                <div class="message-body">
+                  <figure class="image is-3by2">
+                    <img
+                      class="lazyload"
+                      alt="icon for a big ball of mud showing a hand filled with mud and goop"
+                      src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-mud-4901805.svg"
+                    />
+                  </figure>
+                  <p>
+                    All code starts off with the best feasible design. Without
+                    patterns, devolution is inevitable.
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="column">
+              <article class="message">
+                <div class="message-header">
+                  <p>Code Pasta</p>
+                </div>
+                <div class="message-body">
+                  <figure class="image is-3by2">
+                    <img
+                      class="lazyload"
+                      alt="An icon showing a plate of spaghetti."
+                      src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-spaghetti-1507970.svg"
+                    />
+                  </figure>
+                  <p>
+                    These code pasta dishes that will always lead to
+                    indigestion.
+                    <br />
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div class="column">
+              <article class="message">
+                <div class="message-header">
+                  <p>The Golden Hammer</p>
+                </div>
+                <div class="message-body">
+                  <figure class="image is-3by2">
+                    <img
+                      class="lazyload"
+                      alt="An icon showing a dwarven forged war hammer."
+                      src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-hammer-3932760.svg"
+                    />
+                  </figure>
+                  <p>
+                    When someone hands you a new hammer, everything looks like a
+                    nail!
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <img
+            class="lazyload"
+            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/the-boss-1.webp"
+            alt="The evil pointy haired boss who makes you ship your software without testing it first."
+          />
+          
+        </div>
+      </div>
+    </section>
+    <section
+      id="solid-section"
+      class="section"
+      style="background-color: rgb(182, 181, 181)"
+    >
+      <div class="columns">
+            <div id="solid-squares" class="container">
+              <div class="column is-full">
+                <p class="title is-3" style="color: #211d1e">
+                  Prepare yourself to transform the way you write code.
+                </p>
+                <p class="patternSubtitle">
+                  Good code never happens by accident. Learning patterns without
+                  learning the best design practices will not yield good
+                  results.&nbsp; After we cover antipatterns, we talk about
+                  <strong>SOLID</strong>.<strong>&nbsp; </strong>SOLID
+                  represents a set of design techniques that help you create
+                  flexible object class structures.&nbsp;
+                </p>
+                <div class="columns">
+                  <div class="column">
+                    <div class="box bigLetterBox">
+                      <span class="bigLetter">S</span>
+                      <p class="patternDescription">
+                        Single Responsibility Principle
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box bigLetterBox">
+                      <span class="bigLetter">O</span>
+                      <p class="patternDescription">
+                        Open-Closed <br />Principle
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box bigLetterBox">
+                      <span class="bigLetter">L</span>
+                      <p class="patternDescription">
+                        Liskov <br />Substitution
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box bigLetterBox">
+                      <span class="bigLetter">I</span>
+                      <p class="patternDescription">
+                        Interface Segregation Principle
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="box bigLetterBox">
+                      <span class="bigLetter">D</span>
+                      <p class="patternDescription">
+                        Dependency Inversion Principle
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="title is-5 patternDescription">
+                Not sure what these are? Read Chapter 2! Each principle is
+                explained in detail. Examples are included that show you how to
+                break the rules, and later, how to use them. After that, SOLID
+                is used to make every example including a full project in
+                Chapter 7.
+              </p>
+            </div>
+      </div>
+    </section>
+    <section
+      id="hero-section"
+      class="section"
+      style="background-color: #211d1e"
+    >
+      <div class="columns is-centered">
+        <div class="column is-half" style="color: white">
+          <h1 class="title is-3" style="color: #f69423">Meet the heroes!</h1>
+          <h4 class="title is-4" style="color: lightgray">
+            The following story is fictitious.
+          </h4>
+          <p class="block">
+            Any resemblance to actual persons, alive or dead, is a mere
+            coincidence (and a real shame!).
+          </p>
+          <img
+            class="is-hidden-tablet lazyload"
+            alt="Kitty and Phoebe with a bicycle prorotype and two robots"
+            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/kitty-and-phoebe-bikes-robots.webp"
+          />
+          <p class="block">
+            Meet Kitty and Phoebe – Texas-born sisters who share a love for
+            riding bicycles. Phoebe is studying engineering at Southern
+            Methodist University, a private university in the sisters’ hometown
+            of Dallas, Texas. Kitty is studying industrial design at Sul Ross
+            University in the town of Alpine located in west Texas. Purely
+            through kismet, they both won a summer internship at MegaBikeCorp, a
+            large multi-national bicycle manufacturing company.
+          </p>
+          <p class="block">
+            After three months of soul crushging big-company bureaucracy, the girls decided
+            they could do better. Kitty designs a new line of incredibly
+            innovative bicycles. Her sister has the idea to create an automated
+            robotic assembly line. The sisters find two abandoned warehouses:
+            one in Dallas, the other in the city of Alpine. The two set up shop
+            with the help of their father's credit card. (Don't worry, they pay
+            him back!)
+          </p>
+          <p class="block">
+            Throughout the story, the sisters are working on building the
+            software systems that will control their robotic manufacturing
+            facilities. You'll be working alongside them, learning as they do,
+            and occasionally making mistakes, and then correcting them.
+          </p>
+          <p class="title is-5 block" style="color: white">
+            This is the most fun you'll have reading a technical book.
+          </p>
+        </div>
+        <div class="column is-half">
+          <img
+            class="is-hidden-mobile lazyload"
+            alt="Kitty and Phoebe with a bicycle prorotype and two robots"
+            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/kitty-and-phoebe-bikes-robots.webp"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="pattern-list" class="section" style="background-color: orange">
+      <div class="columns is-mobile is-centered">
+        <div class="container">
+          <div class="column is-full">
+            <div class="container">
+              <div class="column is-full">
+                <p class="title is-3" style="color: #211d1e">
+                  Master the most important patterns you'll use every day.
+                </p>
+                <p class="patternSubtitle">
+                  Chapter 3 through 6 describe what I believe are the most
+                  useful patterns for every day, real-world projects in C#.
+                </p>
+
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Simple Factory</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Simple Factory"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-factory-1588897.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Not really a pattern, but many developers think it is.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Factory Method</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="The Factory Method Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-industrial-1511913.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          This is the factory pattern most widely used by developers.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Abstract Factory</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Abstract Factory Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-factory-1108261.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Don't confuse this with Neo-Classical expressionist
+                          factories!
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Builder</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Builder Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-builder-682769.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Rome could have been built in a day with this pattern!
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Object Pool</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Object Pool Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-pool-947493.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          When objects are costly to instantiate, put them in a pool!
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Singleton</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="The Singleton Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/singleton.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          There can be only one. But one is all you need.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Decorator</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Decorator pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-christmas-ornament-1412988.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          It's like behavioral bling for closed classes.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Façade</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="the Facade Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-castle-5099143.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Code castle on the outside, code trailer park on the
+                          inside.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Composite</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Composite Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-folder-tree-846313.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Use recursion on your object graphs by using
+                          recursion.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Bridge</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="The bridge pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-bridge-932128.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Manage complexity between two related object graphs.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Command</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Command Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-megaphone-39209.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Package and send your commands like a boss.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Observer</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Observer Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-observatory-4716354.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          See object. See object run. Now do something.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div
+                  class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd"
+                >
+                  <div class="column is-one-quarter">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Iterator</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Iterator Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-loop-4823842.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          It never eats. It never sleeps. It just keeps going.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="column is-one-quarter">
+                    <article class="message">
+                      <div class="message-header">
+                        <p>The Strategy</p>
+                      </div>
+                      <div class="message-body">
+                        <figure class="image is-3by2">
+                          <img
+                            class="lazyload"
+                            alt="Strategy Pattern"
+                            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/noun-strategy-2421612.svg"
+                          />
+                        </figure>
+                        <p class="patternDescription">
+                          Action without strategy is a nightmare.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="chapter-7-8" class="section" style="background-color: #211d1e">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters" style="color: white">
+          <p class="title is-3" style="color: #f69423">
+            Chapters 7 & 8: PLOT TWIST!
+          </p>
+          <p class="title is-4" style="color: #f69423">
+            The plot of our story takes a dire turn and the heroic sisters must
+            find a way to adapt so they can save their family and their
+            business.
+          </p>
+          <br />
+          <p class="block">
+            In the real world, your business needs to be able to pivot on a dime
+            to capture new markets and new opportunities. If your software
+            architecture isn't resilient and flexible, you could miss out. The
+            only way to have a flexible architecture is to follow SOLID
+            principles and utilize patterns.  Stretched thin by their current business committements, the girls have 
+            to recruit some help from a skilled developer most companies probably wouldn't hire.  Will this unlikely 
+            hero save they day using the patterns learned in the earlier chapters?
+          </p>
+          <p class="block">
+            That's all we're going to say! No spoilers! I'm not even going to
+            tell you what that red thing is. It looks like a tank, but it
+            isn't. That's all you're getting!
+            <a href="https://amzn.to/3ThiHPn"><strong style="color: white; text-decoration: underline;">Now go buy the book!</strong></a>
+          </p>
+        </div>
+        <div class="column is-one-quarter">
+          <img
+            class="lazyload"
+            src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/tracked-chair-red.webp"
+            alt="What the heck is that thing?  Read Chapter 7 to find out."
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="has-text-white bottom" style="background-color: black">
+      <div class="container is-fluid">
+        <div class="columns">
+          <div class="column">
+            <p><a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank">Bruce M. Van Horn II</a></p>
+          </div>
+          <div class="column has-text-right">
+            <a
+              href="https://github.com/Kpackt/Real-World-Implementation-of-C-Design-Patterns"
+              target="_blank"
+              ><i class="fa-brands fa-github socialIcons"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank"
+              ><i class="fa fa-linkedin-square socialIcons"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2924de3341.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/typing-effect.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-W8K7VNXWQY"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-W8K7VNXWQY");
+    </script>
+    <script src="./js/site.js"></script>
+    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>    
+  </body>
+</html>

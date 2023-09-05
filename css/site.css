@@ -1,0 +1,58 @@
+/* https://www.colorxs.com/palette/color/lime-green */
+body{
+  background-color: #0f0917;
+}
+.patternDescription {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.socialIcons {
+  color: white;
+}
+
+.socialIcons:hover, .greenText {
+  color: limegreen;
+}
+
+.standard-green {
+  background-color: limegreen;
+  color: white;
+}
+
+.patternSubtitle {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+.bigLetter {
+  font-size: 48px;
+}
+
+.bigLetterBox {
+  text-align: center;
+  border: 3px solid black;
+  max-width: 240px;
+  max-height: 180px;
+  margin: 0 auto;
+}
+
+.message-body {
+  min-height: 270px;
+}
+
+.dynamic-type {
+  min-height:200px;
+}
+
+.source {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.countdown-mono {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.topSpacing {
+  margin-top:80px !important;
+}
