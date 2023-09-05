@@ -56,3 +56,13 @@ body{
 .topSpacing {
   margin-top:80px !important;
 }
+
+.title {
+  color: white;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
