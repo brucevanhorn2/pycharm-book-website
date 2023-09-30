@@ -1,182 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Bruce M. Van Horn II, CSM" />
-    <meta keywords="PyCharm, Python, JetBrains, programming, software development" />
-    <meta name="description" content="Author: Bruce M. Van Horn II, Illustrator: Bruce M. Van Horn II, Category: Books, Length 504 pages, Price 41.99 USD" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/typing-effect.css" />
-    <link rel="stylesheet" href="./css/site.css" />
-    <title>Hands On Application Development with PyCharm 2nd Edition</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Effect Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
 
-    <section class="section container">
-      <div class="columns is-mobile is-centered dynamic-type">
-        <h1 class="title" style="text-align: center">
-          <span class="sentence topSpacing">Finally, a book on PyCharm that won't</span
-          ><br />
-          <span id="sentence" class="sentence"></span>
-          <span id="feature-text"></span>
-          <span class="input-cursor">|</span>
-        </h1>
-      </div>
-      <div class="buttons center-button" >
-        <a
-                id="btnNotify"
-                class="button standard-green"
-                href="sign-up.html"
-        >
-          <strong>Get notified when the book is out!</strong>
-        </a>
-      </div>
-    </section>
+    .parallax-container {
+      width: 100%;
+      height: 100vh;
+      perspective: 1px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-    <section class="section container is-mobile">
-      <div class="columns is-centered">
-        <div class="column is-one-third">
-          <figure class="image is-4by5">
-            <a href="https://amzn.to/3ThiHPn" target="_blank">
-              <img
-                alt="A picture of the cover of the book.  It's all shiny and black with an abstract purple box thingy.  Whatever, it's cool so go get the book already!"
-                src="https://csharppatterns-dev.nyc3.cdn.digitaloceanspaces.com/img/actual-cover.webp"
-              />
-            </a>
-          </figure>
-        </div>
-        <div class="column" style="margin: 20px">
-          <h1 class="is-hidden-mobile title is-1" style="margin-bottom: 60px">
-            Hands On Application Development with PyCharm
-          </h1>
-          <h1 class="is-hidden-tablet title is-3" style="margin-bottom: 60px">
-            Hands On Application Development with PyCharm
-          </h1>
-          <h2 class="subtitle is-3" style="margin-bottom: 80px">
-            <em>I'm sure there will be a fancy subtitle soon!</em
-            >
-          </h2>
-          <h3 class="title is-4">by
-            <a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank">Bruce M. Van Horn II</a> and
-            <a href="https://www.linkedin.com/in/quan-m-nguyen/" target="_blank">Quan Nguyen</a></h3>
-          <h5 class="title is-5">
-            <a
-              href="https://github.com/PacktPublishing/Hands-On-Application-Development-with-PyCharm---Second-Edition"
-              target="_blank"
-              ><i class="fa-brands fa-github"></i
-              ><span style="margin-right: 16px">
-                Fork the code on GitHub</span
-              ></a
-            >
-          </h5>
-        </div>
-      </div>
-    </section>
-    <section
-      id="intro-section"
-      class="section"
-      style="background-color: #073307"
-    >
-      <div class="columns is-centered">
-        <!-- <div class="container"> -->
-        <div class="column is-one-quarter">
-          <img
-            class="is-hidden-mobile lazyload"
-            alt="Phoebe, one of the characters in the book, standing in her lab coat saying AHA!"
-            src="img/not-optimized/just-snake-and-laptop.png"
-          />
-          <div class="is-hidden-tablet" style="text-align: center;">
-            <img
-              class="lazyload"
-              style="height:320px;"
-              alt="Master Py, the Sage of Python widsom"
-              src="img/not-optimized/just-snake-and-laptop.png"
-            />
-          </div>
-        </div>
-        <div class="column is-three-quarters" style="color: white; background-image: url(./img/not-optimized/python-master-temple.png)">
-          <p class="title is-3" style="color: limegreen">
-            Wield the PyCharm IDE the way Bruce Lee swings nunchucks!
-          </p>
-          <br />
-          <p class="block">
-           High in the sacred Syntax Mountains, up 32,768 stairs lies the Monastery of Code Harmony.
-          </p>
-          <p class="block">
-            For many years, students gathered in the courtyard for their daily coding exercises under the watchful gaze of the Python Sage, Master Py. One afternoon, as the sun cast a warm glow over the bamboo mats, Master Py raised his tail, and the students fell into a respectful silence.
-          </p>
-          <p class="block">
-            "Today," he began, his voice carrying the weight of wisdom, "we shall delve into the realm of debugging, a skill as crucial to a programmer as a warrior's keen senses are on the battlefield."
-          </p>
-          <p class="block">
-            The students listened intently, their minds ready to absorb the sage's teachings. Master Py continued, "To aid us in this endeavor, we shall invoke the aid of a powerful weapon known as PyCharm; a vessel through which we shall channel our intentions into the digital realm."
-          </p>
-          <p class="block">
-            With a flick of his tongue, and a flourish of his tail, Master Py produced a laptop, adorned with a glowing emblem of a snake entwined with lines of code. On the screen, the students could see the PyCharm IDE, a tool that allowed the students to write, test, and debug their Python code with greater efficiency.
-          </p>
-          <p class="block">
-            "Open your minds to the spirit of PyCharm," Master Py instructed, his eyes twinkling with a hint of playfulness. "Just as a warrior and their weapon become one in battle, so too shall you and PyCharm become one in the art of coding."
-          </p>
-          <p class="block">
-            I was there that day.  I remember powering on my laptop, the screen illuminating with the promise of newfound knowledge. With the guidance of Master Py, I navigated the PyCharm IDE, learning to set breakpoints, inspect variables, and trace the flow of their code's execution.  I learned to channel the energy of PyCharm to create many types of Python projects almost instantly, and to shape those projects into ship-able software.  PyCharm became an extension of my mind as I was challenged with web development and data science workflows.  As the sun rose the next day, I found myself exhausted laying on the temple floor, my laptop battery drained.
-          </p>
-          <p class="block">
-            "Remember," Master Py advised, "the spirit of PyCharm is a loyal companion on your coding journey. It aids you in unraveling the mysteries of your code, just as a masterful warrior anticipates their opponent's moves."
-          </p>
-          <p class="block">
-            The next day, I found myself transported back to the mundane realm that occupies most of my days, but I knew that I had to write down all that I had learned lest Master Py's wisdom leave me forever.  This book is the Master's legacy.
-          </p>
+    .parallax-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: translateZ(-1px) scale(2);
+      background: url('./img/not-optimized/python-master-temple.png') center/cover no-repeat fixed;
+    }
 
-        </div>
-      </div>
-    </section>
-    <footer class="has-text-white bottom" style="background-color: black">
-      <div class="container is-fluid">
-        <div class="columns">
-          <div class="column">
-            <p><a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank">Bruce M. Van Horn II</a></p>
-          </div>
-          <div class="column has-text-right">
-            <a
-              href="https://github.com/Kpackt/Real-World-Implementation-of-C-Design-Patterns"
-              target="_blank"
-              ><i class="fa-brands fa-github socialIcons"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/brucevanhorn2/" target="_blank"
-              ><i class="fa fa-linkedin-square socialIcons"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2924de3341.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/typing-effect.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-W8K7VNXWQY"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-W8K7VNXWQY");
-    </script>
-    <script src="./js/site.js"></script>
-    <script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>    
-  </body>
+    .parallax-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+<div class="parallax-container">
+  <div class="parallax-content"></div>
+</div>
+<div class="parallax-text">
+  Scroll down to see the parallax effect!
+</div>
+</body>
 </html>
