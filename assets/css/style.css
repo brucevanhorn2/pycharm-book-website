@@ -875,23 +875,23 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# What you'll learn
 --------------------------------------------------------------*/
-.why-us .box {
+.what-youll-learn .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   background: #1a1814;
 }
 
-.why-us .box span {
+.what-youll-learn .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: darkgreen;
 }
 
-.why-us .box h4 {
+.what-youll-learn .box h4 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
@@ -899,22 +899,22 @@ section {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.why-us .box p {
+.what-youll-learn .box p {
   color: #aaaaaa;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
-.why-us .box:hover {
+.what-youll-learn .box:hover {
   background: #013a01;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span,
-.why-us .box:hover h4,
-.why-us .box:hover p {
+.what-youll-learn .box:hover span,
+.what-youll-learn .box:hover h4,
+.what-youll-learn .box:hover p {
   color: #fff;
 }
 
