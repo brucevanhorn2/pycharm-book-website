@@ -2465,8 +2465,7 @@ background-color: black;
 .aria-controls{color:white;}
 
 #book-cover {
-  width: 90%;
-  height: 90%;
+  width: 100%;
   margin-bottom: 40px;
 }
 
