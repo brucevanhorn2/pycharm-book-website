@@ -53,7 +53,7 @@ h6 {
   left: calc(50% - 30px);
   border: 6px solid #1a1814;
   border-top-color: darkgreen;
-  border-bottom-color: red;
+  border-bottom-color: #253425;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -93,7 +93,7 @@ h6 {
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid red;
+  border: 2px solid #253425;
   right: 15px;
   bottom: 15px;
   
@@ -812,8 +812,8 @@ section {
   height: 60px;
   z-index: 1;
   content: "";
-  border-left: 5px solid red;
-  border-top: 5px solid red;
+  border-left: 5px solid #253425;
+  border-top: 5px solid #253425;
   transition: 0.5s;
 }
 
@@ -825,8 +825,8 @@ section {
   height: 60px;
   z-index: 2;
   content: "";
-  border-right: 5px solid red;
-  border-bottom: 5px solid red;
+  border-right: 5px solid #253425;
+  border-bottom: 5px solid #253425;
   transition: 0.5s;
 }
 
@@ -1042,11 +1042,11 @@ section {
 .specials .nav-link.active {
   color: white;
   background: darkgreen;
-  border-color: red;
+  border-color: #253425;
 }
 
 .specials .nav-link:hover {
-  border-color: red;
+  border-color: #2b482b;
 }
 
 .specials .tab-pane.active {
@@ -1183,7 +1183,7 @@ section {
 
 .book-a-table .php-email-form .validate {
   display: none;
-  color: red;
+  color: #253425;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1252,7 +1252,7 @@ section {
 
 .book-a-table .php-email-form input:focus,
 .book-a-table .php-email-form textarea:focus {
-  border-color: red;
+  border-color: #253425;
 }
 
 .book-a-table .php-email-form input {
@@ -1354,7 +1354,7 @@ section {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: red;
+  background-color: #253425;
 }
 
 /*--------------------------------------------------------------
@@ -1510,7 +1510,7 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: red;
+  color: #253425;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1575,7 +1575,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: red;
+  border-color: #253425;
 }
 
 .contact .php-email-form input {
@@ -1723,7 +1723,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: red;
+  color: #253425;
 }
 
 #footer .footer-top .footer-newsletter form {
