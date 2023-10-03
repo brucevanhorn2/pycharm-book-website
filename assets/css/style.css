@@ -1040,7 +1040,7 @@ section {
 }
 
 .specials .nav-link.active {
-  color: #1a1814;
+  color: white;
   background: darkgreen;
   border-color: red;
 }
@@ -2469,3 +2469,4 @@ background-color: black;
   height: 90%;
   margin-bottom: 40px;
 }
+
